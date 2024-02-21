@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GuessTheNumber | Home</title>
+    <style>
+        body {
+            background-color: #808080;
+        }
+
+        .container .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .para, .heading {
+            color: #fff;
+        }
+
+        input {
+            padding: 10px 20px;
+            outline: none;
+        }
+        
+        button {
+            display: block;
+            margin: auto;
+            margin-top: 20px;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            background-color: #000;
+            color: #fff;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <p class="para">Try and guess a number between 1 and 20</p>
+            <p class="para" id="guessPara">You have 5 guesses</p>
+            <h1 class="heading">Guess a number</h1>
+            <form action="#FIXME" class="form" method="post">
+                <input type="text" placeholder="Enter your guess" class="input">
+                <button type="submit">Submit Guess</button>
+            </form>
+            <div class="guesses">
+                <p class="para">Previous Guesses : <span id="span"></span></p>
+            </div>
+            <div class="results">
+            </div>
+        </div>
+    </div>
+    <script src="guess.js"></script>
+</body>
+
+</html>
