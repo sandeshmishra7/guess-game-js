@@ -48,7 +48,7 @@ function guessTheNumber(randomNumber) {
         }
     }
 
-    else if (isNan(inputVal)) {
+    else if (inputVal !== Number) {
         results.innerHTML = `Please enter a valid number`;
     }
 
